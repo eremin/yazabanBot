@@ -1,0 +1,15 @@
+{
+  "autoload" : {
+    "psr-4": {
+      "YazabanBot\\": "src/"
+    }
+  },
+  "name": "eremin/yazabanBot",
+  "type": "project",
+  "require": {
+    "php": ">=5.5",
+    "php-di/php-di": "^5.4",
+    "irazasyed/telegram-bot-sdk": "^2.0",
+    "roave/security-advisories": "dev-master"
+  }
+}
