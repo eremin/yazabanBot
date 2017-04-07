@@ -12,4 +12,7 @@ $api = $container->get(Telegram\Bot\Api::class);
 $messageHandler = $container->get(\YazabanBot\MessageHandler::class);
 
 $update = $api->getWebhookUpdates();
-$messageHandler->handle($update->getMessage());
+$message = $update->getMessage();
+if ($message) {
+    $messageHandler->handle($message);
+}
